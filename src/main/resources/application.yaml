@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    rest:
+      default-media-type: application/json
+
+telegram:
+  bot-token: ${TELEGRMA_BOT_TOKEN}
+  chat-id: ${CHAT_ID}
