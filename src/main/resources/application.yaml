@@ -5,6 +5,8 @@ spring:
   data:
     rest:
       default-media-type: application/json
+app:
+  token: ${TOKEN}
 
 telegram:
   bot-token: ${TELEGRMA_BOT_TOKEN}
