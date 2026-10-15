@@ -25,9 +25,9 @@ public class TelegramClient {
         StringBuilder sb = new StringBuilder();
         sb.append("🔴 <b>").append(escapeHtml(request.application())).append(" Xatoligi!</b>\n\n");
         if (request.url() != null && !request.url().isBlank()) {
-            sb.append("🔗 <b>URL:</b> <code>").append(escapeHtml(request.url())).append("</code>\n");
+            sb.append("🔗 <b>URL:</b> <code>").append(escapeHtml(request.url())).append("</code>\n\n");
         }
-        sb.append("💬 <b>Xabar:</b> <code>").append(escapeHtml(request.message())).append("</code>\n");
+        sb.append("👶 <b>User:</b> <code>").append(escapeHtml(request.message())).append("</code>\n");
         if (request.type() != null) {
             sb.append("📌 <b>Type:</b> <code>").append(escapeHtml(request.type())).append("</code>\n");
         }
