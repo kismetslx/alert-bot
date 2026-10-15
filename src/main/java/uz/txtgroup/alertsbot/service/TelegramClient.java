@@ -31,6 +31,9 @@ public class TelegramClient {
         if (request.type() != null) {
             sb.append("📌 <b>Type:</b> <code>").append(escapeHtml(request.type())).append("</code>\n");
         }
+        if (request.role() != null) {
+            sb.append("🔐 b>Role:</b> <code>").append(escapeHtml(request.role())).append("</code>\n");
+        }
         if (request.requestPayload() != null && !request.requestPayload().isBlank()) {
             sb.append("\n📥 <b>Request Payload:</b>\n");
             sb.append("<pre><code class=\"json\">").append(escapeHtml(request.requestPayload())).append("</code></pre>\n");

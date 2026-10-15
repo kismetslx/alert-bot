@@ -3,6 +3,7 @@ package uz.txtgroup.alertsbot.dto;
 public record ErrorEventRequest(
         String application,
         String url,
+        String role,
         String type,
         String message,
         String requestPayload,
